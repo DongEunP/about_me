@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* html, body{height: 100%;} */
+ul,ol{
+  list-style: none;
+}
+img{
+  max-width: 100%;
+  vertical-align: top;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+body{
+  font-family: 'nanummyeongjo', serif;
+  font-size: 1rem;
+  color: #707070;
+  line-height: 1.4;
+}
+.main-top-wrap{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+ul li{display: inline;}
+/* li{padding: 20px;} */
+
+.container{
+  width: 1240px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.clearfix::after{
+  content: '';
+  display: block;
+  clear: both;
+}
