@@ -12,6 +12,8 @@
   <script src="https://kit.fontawesome.com/6b9483975b.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+  <script src="js/script.js"></script>
 </head>
 <body>
    <!-- 헤더 -->
@@ -88,7 +90,7 @@
   <!-- 섹션1 -->
   <section class="section">
     <div>
-      <div class="txt_box">
+      <div class="txt_box sec01_txt">
         <h2>Vegan<br>Beauty</h2>
         <p>
           Lorem ipsum dolor sit amet<br> consectetur adipisicing elit.<br> Quod, numquam consectetur eveniet<br> iure at sunt, rerum quia enim
@@ -96,7 +98,7 @@
         <a href="#">더 알아보기</a>
       </div>
     </div>
-    <div class="vg_img">
+    <div class="vg_img sec01_img">
       <a href="#"><img src="./img/article_vg.jpg" alt=""></a>
     </div>
   </section>
@@ -105,7 +107,7 @@
   <section class="section sec02">
     <div>
       <div>
-        <div class="txt_box">
+        <div class="txt_box sec02_txt">
           <h2>Product<br>List</h2>
           <p>
             Lorem ipsum dolor sit amet<br> consectetur adipisicing elit.<br> Quod, numquam consectetur eveniet<br> iure at sunt, rerum quia enim
@@ -114,7 +116,7 @@
         </div>
       </div>
     </div>
-    <div class="pd_img">
+    <div class="pd_img sec02_img">
       <a href="#"><img src="./img/article_pd.jpg" alt=""></a>
     </div>
   </section>  
@@ -126,47 +128,56 @@
 
   <!-- 섹션4 -->
   <section class="review">
-    <div class="sec04_wrap">
+    <div class="sec04_wrap swiper1">
       <h3>Review</h3>
-    <div class="rv_wrap">
-      <div class="rv_box">
-        <a href="#">
-          <img src="img/6631b9a3ec3cfb9b865ee29afa0e5bb8_74726.png" alt="">
-          <div class="rv_txt">
-            <h4></h4>
-            <p></p>
-          </div>
-        </a>
+      <div class="rv_wrap swiper-wrapper">
+        <div class="rv_box swiper-slide">
+          <a href="#">
+            <img src="img/6631b9a3ec3cfb9b865ee29afa0e5bb8_74726.png" alt="">
+            <div class="rv_txt">
+              <h4></h4>
+              <p></p>
+            </div>
+          </a>
+        </div>
+        <div class="rv_box swiper-slide">
+          <a href="#">
+            <img src="" alt="">
+            <div class="rv_txt">
+              <h4></h4>
+              <p></p>
+            </div>
+          </a>
+        </div>
+        <div class="rv_box swiper-slide">
+          <a href="#">
+            <img src="" alt="">
+            <div class="rv_txt">
+              <h4></h4>
+              <p></p>
+            </div>
+          </a>
+        </div>
+        <div class="rv_box swiper-slide">
+          <a href="#">
+            <img src="" alt="">
+            <div class="rv_txt">
+              <h4></h4>
+              <p></p>
+            </div>
+          </a>
+        </div>
+        <div class="rv_box swiper-slide">
+          <a href="#">
+            <img src="" alt="">
+            <div class="rv_txt">
+              <h4></h4>
+              <p></p>
+            </div>
+          </a>
+        </div>
+        
       </div>
-      <div class="rv_box">
-        <a href="#">
-          <img src="" alt="">
-          <div class="rv_txt">
-            <h4></h4>
-            <p></p>
-          </div>
-        </a>
-      </div>
-      <div class="rv_box">
-        <a href="#">
-          <img src="" alt="">
-          <div class="rv_txt">
-            <h4></h4>
-            <p></p>
-          </div>
-        </a>
-      </div>
-      <div class="rv_box">
-        <a href="#">
-          <img src="" alt="">
-          <div class="rv_txt">
-            <h4></h4>
-            <p></p>
-          </div>
-        </a>
-      </div>
-      
-    </div>
     </div>
   </section>
   <!-- //섹션4 -->
@@ -200,28 +211,5 @@
       </ul>
     </div>
   </footer>
-  <script>
-    $(function(){
-    const progressCircle = document.querySelector(".autoplay-progress svg");
-    const progressContent = document.querySelector(".autoplay-progress span");
-    var swiper = new Swiper(".swiper",{
-      slidesPerView: 1,
-      centeredSlides: true,
-      loop: true,
-      autoplay: {
-        delay: 5000,
-        disableOnInteraction: false
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      },
-    })
-  })
-  </script>
 </body>
 </html>

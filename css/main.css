@@ -14,7 +14,7 @@ html, body {height: 100%;}
 /* 섹션공통*/
 .section {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: flex-end;
   align-items: end;
@@ -42,10 +42,40 @@ html, body {height: 100%;}
   text-align: center;
   line-height: 50px;
 }
+.vg_img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* .sec01_img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.sec01_img img{
+  position: absolute;
+} */
+
+.sec01_txt{
+  margin-right: 200px;
+  opacity: 0;
+}
+.sec01_img{
+  margin-right: -300px;
+  opacity: 0;
+}
 
 /* 섹션2 */
 .sec02{
   flex-direction: row-reverse;
+}
+.sec02_txt{
+  margin-left: 200px;
+  opacity: 0;
+}
+.sec02_img{
+  margin-left: -300px;
+  opacity: 0;
 }
 
 /* 섹션3 */
@@ -71,14 +101,16 @@ html, body {height: 100%;}
   justify-content: space-evenly;
 }
 .rv_wrap{
-  width: 70%;
+  width: 70% !important;
+  height: fit-content !important;
   display: flex;
   justify-content: space-between;
   align-items: end;
-  margin: 0 auto;
+  margin: 0 auto -400px auto;
+  overflow: hidden;
 }
 .rv_wrap .rv_box{
-  width: 23%;
+  width: 23% !important;
   height: 395px;
   display: flex;
   flex-direction: column;
