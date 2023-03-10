@@ -6,17 +6,19 @@
   top: 50px;
   left: 50%;
   transform: translate(-50%);
-  opacity: 0;
-  border-top: 1px solid;
+  /* opacity: 0; */
+  border-top: 1px solid black;
+  z-index: 21;
+  scale: 0;
 }
 header{
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: fit-content;
   z-index: 20;
 }
 nav:hover{
-  background-color: rgba(225, 225, 225, 0.3);
+  background-color: rgba(225, 225, 225, 0.6);
   backdrop-filter: saturate(120%) blur(12px);
   height: 200px;
 }
@@ -27,6 +29,7 @@ nav:hover .depth2{
 nav:hover .gnb-line{
   opacity: 1;
   transition: 0.5s;
+  scale: 1;
 }
 .gnb{
   display: flex;
@@ -72,16 +75,18 @@ nav:hover .gnb-line{
 .page-up{
   width: 40px;
   height: 40px;
-  border: 1px solid #707070;
   font-size: 30px;
-  text-align: center;
   line-height: 40px;
-  position: absolute;
-  bottom: 5%;
-  right: 2%;
   cursor: pointer;
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  border: 1px solid #707070;
   background-color: rgba(225, 225, 225, 0.2);
   backdrop-filter: saturate(180%) blur(5px);
+  text-align: center;
+  border-radius: 50%;
+  opacity: 0;
 }
 
 /* 푸터 */

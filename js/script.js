@@ -4,6 +4,7 @@ $(function(){
   const progressCircle = document.querySelector(".autoplay-progress svg");
   const progressContent = document.querySelector(".autoplay-progress span");
   var swiper = new Swiper(".swiper",{
+    initialSlide: 1,
     slidesPerView: 1,
     centeredSlides: true,
     loop: true,
@@ -22,11 +23,14 @@ $(function(){
   })
 
   var swiper = new Swiper(".swiper1",{
-    slidesPerView: 4,
+    initialSlide: 1,
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    // spaceBetween: ,
     loop: true,
+    loopedSlides: 2,
     autoplay: {
       delay: 3000,
-      disableOnInteraction: false
     },
   })
 
@@ -44,6 +48,7 @@ $(function(){
       timer = setTimeout(function(){
         $('.sec01_txt').animate({marginRight:'0',opacity:'1'},1000);
       },1000);
+      $('.page-up').animate({opacity:'1'},1000)
       
       
     }
