@@ -1,0 +1,125 @@
+/* 메인비쥬얼 */
+.sub_mv{
+  width: 100%;
+  height: 100vh;
+}
+.sub_mv img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 섹션1 */
+.sec01{
+  height: 100vh;
+  position: relative;
+}
+.sec01_img img{
+  position: absolute;
+}
+.sec01_img img:first-child{
+  top: 50%;
+  left: 20%;
+  z-index: 3;
+}
+.sec01_img img:nth-child(2){
+  top: 10%;
+  left: 0;
+  z-index: 2;
+}
+.sec01_img img:last-child{
+  top: 0;
+  z-index: 1;
+}
+.sec01_txt{
+  position: absolute;
+  top: 10%;
+  right: 0;
+  text-align: right;
+  z-index: 4;
+}
+section h2{
+  font-size: 5vw;
+}
+section p{
+  font-size: 1.5vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 섹션2 */
+.sec02{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url(../img/sec02_bg.png);
+}
+.sec02 .sec02_txt{
+  text-align: center;
+}
+.sec02 .sec02_icon{
+  width: 70%;
+  height: 35%;
+  display: flex;
+  justify-content: space-between;
+}
+.sec02 .sec02_icon>div{
+  text-align: center;
+}
+.sec02 .sec02_icon>div p{
+  padding-top: 20px;
+  font-size: 1vw;
+}
+.sec02 .sec02_txt02{
+  position: relative;
+  height: 20%;
+  font-size: 6vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sec02 .sec02_txt02 b{
+  position: absolute;
+  color: #A461B1;
+}
+.sec02 .sec02_txt02 b:first-child{
+  top: 20%;
+  left: 40%;
+  color: rgba(145, 132, 190, .5);
+}
+
+/* 섹션3 */
+.sec03{
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec03 img{
+  padding: 30px 0;
+}
+.sec03 p{
+  font-weight: 900;
+}
+.sec03 b{
+  position: absolute;
+  font-size: 8vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #D8D8D8;
+}
+.sec03>div{
+  position: relative;
+}
+.sec03 .sec03_left b{
+  top: -12%;
+  left: -60%;
+  transform: rotate(-90deg) translateX(-50%);
+}
+.sec03 .sec03_right b{
+  transform: rotate(90deg) translateX(50%);
+  top: 30px;
+  right: -70%;
+}
+.sec03 .sec03_right p{
+  text-align: right;
+}

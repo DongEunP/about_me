@@ -18,7 +18,7 @@ header{
   z-index: 20;
 }
 nav:hover{
-  background-color: rgba(225, 225, 225, 0.6);
+  background-color: rgba(225, 225, 225, 0.8);
   backdrop-filter: saturate(120%) blur(12px);
   height: 200px;
 }
@@ -70,6 +70,9 @@ nav:hover .gnb-line{
 }
 .top-right ul li{
   padding-left: 28px;
+}
+.depth2 li{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .page-up{

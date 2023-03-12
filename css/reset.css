@@ -31,10 +31,8 @@ ul li{display: inline;}
 /* li{padding: 20px;} */
 
 .container{
-  width: 1240px;
-  height: 100%;
+  width: 65%;
   margin: 0 auto;
-  position: relative;
 }
 .clearfix::after{
   content: '';
