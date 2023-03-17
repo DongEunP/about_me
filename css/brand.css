@@ -55,6 +55,8 @@ section p{
   justify-content: space-evenly;
   align-items: center;
   background-image: url(../img/sec02_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .sec02 .sec02_txt{
   text-align: center;
